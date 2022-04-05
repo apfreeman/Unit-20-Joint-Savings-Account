@@ -28,7 +28,7 @@ To automate the creation of joint savings accounts, I have created a Solidity sm
 
 #### Interact with the Deployed Smart Contract
 
-Now that the contract is deployed, it’s time to test its functionality! After each step, I have captured a screenshot of the execution, and then save it in a folder named `Execution_Results`.
+Now that the contract is deployed, it’s time to test its functionality! After each step, I have captured a screenshot of the execution, and then saved it in a folder named `Execution_Results`.
 
 To interact with my deployed smart contract, I have completed the following steps:
 
