@@ -12,52 +12,52 @@ To automate the creation of joint savings accounts, I have created a Solidity sm
 
 * A completed Solidity `JointSavings` smart contract.
 
-* A folder named `Execution_Results` that contains at least eight images. These images should confirm that the deposit and withdrawal transactions, which are designed to test the `JointSavings` functionality in the JavaScript VM, worked as expected.
+* A folder named `Execution_Results` that contains all execution result images. These images confirm that the deposit and withdrawal transactions, which are designed to test the `JointSavings` functionality in the JavaScript VM, worked as expected.
 
-### Instructions
+#### Compile and Deploy Your Contract in the JavaScript VM
 
-The steps for this homework are divided into the following sections:
+1. I have successfully compiled the smart contract.
 
-1. Create a Joint Savings Account Contract in Solidity
+![](https://github.com/apfreeman/Unit-20-Joint-Savings-Account/blob/main/Execution_Results/1_compile.PNG?raw=true)
 
-2. Compile and Deploy Your Contract in the JavaScript VM
+2. In the Remix IDE, I have navigated to the “Deploy & Run Transactions” pane, and then made sure that “JavaScript VM” is selected as the environment.
 
-3. Interact with Your Deployed Smart Contract
+3. I have deployed my smart contract, and then confirmed that it successfully deployed.
 
+![](https://github.com/apfreeman/Unit-20-Joint-Savings-Account/blob/main/Execution_Results/2_deploy.PNG?raw=true)
 
+#### Interact with the Deployed Smart Contract
 
-#### Step 2: Compile and Deploy Your Contract in the JavaScript VM
+Now that the contract is deployed, it’s time to test its functionality! After each step, I have captured a screenshot of the execution, and then save it in a folder named `Execution_Results`.
 
-1. Compile your smart contract. If an error occurs, review your code, and make the necessary changes for a successful compilation.
+To interact with my deployed smart contract, I have completed the following steps:
 
-2. In the Remix IDE, navigate to the “Deploy & Run Transactions” pane, and then make sure that “JavaScript VM” is selected as the environment.
+1. Used the `setAccounts` function to define the authorized Ethereum address that will be able to withdraw funds from your contract.
 
-3. Click the Deploy button to deploy your smart contract, and then confirm that it successfully deployed.
+![](https://github.com/apfreeman/Unit-20-Joint-Savings-Account/blob/main/Execution_Results/3_setAccounts.PNG?raw=true)
 
-#### Step 3: Interact with Your Deployed Smart Contract
-
-Now that your contract is deployed, it’s time to test its functionality! After each step, capture a screenshot of the execution, and then save it in a folder named `Execution_Results`. You’ll share this folder with your final submission.
-
-To interact with your deployed smart contract, complete the following steps:
-
-1. Use the `setAccounts` function to define the authorized Ethereum address that will be able to withdraw funds from your contract.
-
-     > **Note** You can either use the following Ethereum addresses or create new, dummy addresses on the [Vanity-ETH](https://vanity-eth.tk/) website, which includes an Ethereum vanity address generator.
-    >
-    > ```text
-    > Dummy account1 address: 0x0c0669Cd5e60a6F4b8ce437E4a4A007093D368Cb
-    > Dummy account2 address: 0x7A1f3dFAa0a4a19844B606CD6e91d693083B12c0
-    > ```
-
-2. Test the deposit functionality of your smart contract by sending the following amounts of ether. After each transaction, use the `contractBalance` function to verify that the funds were added to your contract:
+2. Tested the deposit functionality of the smart contract by sending the following amounts of ether. After each transaction, I have used the `contractBalance` function to verify that the funds were added to my contract:
 
     * Transaction 1: Send 1 ether as wei.
+    ![](https://github.com/apfreeman/Unit-20-Joint-Savings-Account/blob/main/Execution_Results/4_contract_balance_1.PNG?raw=true)
 
     * Transaction 2: Send 10 ether as wei.
+    ![](https://github.com/apfreeman/Unit-20-Joint-Savings-Account/blob/main/Execution_Results/5_contract_balance_2.PNG?raw=true)
 
     * Transaction 3: Send 5 ether.
+    ![](https://github.com/apfreeman/Unit-20-Joint-Savings-Account/blob/main/Execution_Results/6_contract_balance_3.PNG?raw=true)
 
-    > **Note** Remembering how to convert ether to wei and vice versa can be challenging. So, you can use a website like [Ethereum Unit Converter](https://eth-converter.com/) to ease doing the conversion.
+3. All funds have been successfully deposited into my contract. I have tested the contract’s withdrawal functionality by withdrawing 5 ether into `accountOne` and 10 ether into `accountTwo`. After each transaction, I have used the `contractBalance` function to verify that the funds were withdrawn from my contract. I have also, use the `lastToWithdraw` and `lastWithdrawAmount` functions to verify that the address and amount were correct.
 
-3. Once you’ve successfully deposited funds into your contract, test the contract’s withdrawal functionality by withdrawing 5 ether into `accountOne` and 10 ether into `accountTwo`. After each transaction, use the `contractBalance` function to verify that the funds were withdrawn from your contract. Also, use the `lastToWithdraw` and `lastWithdrawAmount` functions to verify that the address and amount were correct.
 
+    * Withdrawal 1: 5 ether into `accountOne. Withdrawal and Account balance logs. 
+    ![](https://github.com/apfreeman/Unit-20-Joint-Savings-Account/blob/main/Execution_Results/7_contract_withdrawal_balance_1.PNG?raw=true)
+
+    * Withdrawal 1: `lastToWithdraw` and `lastWithdrawAmount` logs.
+    ![](https://github.com/apfreeman/Unit-20-Joint-Savings-Account/blob/main/Execution_Results/8_lastToWithdraw_lastWithdrawal_1.PNG?raw=true)
+
+    * Withdrawal 2: 10 ether into `accountTwo. Withdrawal and Account balance logs. 
+    ![](https://github.com/apfreeman/Unit-20-Joint-Savings-Account/blob/main/Execution_Results/9_contract_withdrawal_balance_2.PNG?raw=true)
+
+    * Withdrawal 2: `lastToWithdraw` and `lastWithdrawAmount` logs.
+    ![](https://github.com/apfreeman/Unit-20-Joint-Savings-Account/blob/main/Execution_Results/10_lastToWithdraw_lastWithdrawal_2.PNG?raw=true)
