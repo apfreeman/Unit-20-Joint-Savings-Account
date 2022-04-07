@@ -20,7 +20,7 @@ To automate the creation of joint savings accounts, I have created a Solidity sm
 
 ![](https://github.com/apfreeman/Unit-20-Joint-Savings-Account/blob/main/Execution_Results/1_compile.PNG?raw=true)
 
-2. In the Remix IDE, I have navigated to the “Deploy & Run Transactions” pane, and then made sure that “JavaScript VM” is selected as the environment.
+2. In the Remix IDE, I navigated to the “Deploy & Run Transactions” pane, and then made sure that “JavaScript VM” is selected as the environment.
 
 3. I have deployed my smart contract, and then confirmed that it successfully deployed.
 
